@@ -28,14 +28,14 @@ Exponential::~Exponential() {
 
 /// @brief copy constructor
 Exponential::Exponential(const Exponential& e) {
-	SetExponential(e.b_coeff,e.k_coeff,c_coeff);
+	SetExponential(e.b_coeff,e.k_coeff,e.c_coeff);
 	
 }
 
 
 /// @brief overload operator =
 Exponential& Exponential::operator=(const Exponential& e) { 
-	SetExponential(e.b_coeff,e.k_coeff,c_coeff);
+	SetExponential(e.b_coeff,e.k_coeff,e.c_coeff);
 	return *this;
 }
 

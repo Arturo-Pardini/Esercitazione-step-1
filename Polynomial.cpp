@@ -19,6 +19,7 @@ Polynomial::Polynomial() {
 ///	@param size size of the array
 Polynomial::Polynomial(const double* coefficients, int size) {
 	SetPolynomial(coefficients,size);
+	
 }
 
 /// @brief destructor
@@ -128,9 +129,6 @@ void Polynomial::SetPolynomial(const double* coefficients, int size) {
 		ErrorMessage("SetPolynomial: the degree of the Polynomial cannot be negative");
 		exit(-1);
 	}
-	
-	if (coeff != NULL)
-		Reset();
 	
 	degree= size - 1;
     coeff = new double[size];
